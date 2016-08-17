@@ -11,7 +11,12 @@
 <div class="container">
   <div class="row">
 	<div class="col-sm-12">
-	  <!-- This is THE STUFF -->
+        <% if notice %>
+	    <div class="alert alert-danger">
+                <p><%= notice %></p>
+        </div>
+		<% end %>
+	  <!-- This is THE FORM -->
 		<%= form_tag weather_display_url do %>
 		    <div class="row">
 			<div class="col-sm-8">
